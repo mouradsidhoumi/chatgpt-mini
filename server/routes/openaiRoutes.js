@@ -1,6 +1,6 @@
-const express = require('express');
+const router = require('express').Router()
+
 const { generateImage, generateChat } = require('../controllers/openaiController');
-const router = express.Router();
 
 router.post('/generateimage', generateImage);
 router.post('/chatai', generateChat)

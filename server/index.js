@@ -2,8 +2,8 @@ const path = require('path')
 const express = require('express')
 const dotenv = require('dotenv').config()
 const cors = require('cors')
+const router = require('./routes/index');
 
-const openaiRoutes = require('./routes/openaiRoutes')
 
 const port = process.env.PORT || 5000
 
@@ -14,11 +14,8 @@ app.use(express.urlencoded({ extended: true })) // To support URL-encoded bodies
 
 app.use(cors())
 
-
-app.get('/', (req, res) => {
-    res.send("Welcome to your server")
-})
-
-app.use('/openai', openaiRoutes);
+app.use('/', router);
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
+
+
