@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import AuthService from "../services/auth.service";
 import DataService from "../services/data.service";
 
-import "./chat.css";
+import "../styles/chat.css";
 
 export const Chat = () => {
   const inputText = useRef();
@@ -76,25 +76,3 @@ export const Chat = () => {
     </>
   );
 };
-/*
-<TextField
-          id="outlined-multiline-static"
-          multiline
-          rows={4}
-          inputRef={textFieldRef}
-          style={{
-            marginBottom: "1rem",
-          }}
-        />
-        <Button variant="contained" onClick={sendRequest}>
-          Send
-        </Button>
-
-        <div>
-          {inProgress ? (
-            <CircularProgress />
-          ) : (
-            <p style={{ whiteSpace: "pre-line" }}>{response}</p>
-          )}
-        </div>
-        */

@@ -3,8 +3,6 @@ import Cookies from "universal-cookie";
 const cookies = new Cookies();
 const API_URL = import.meta.env.VITE_API_BASE_URL;
 
-
-
 const register = async function(name, email, password) {
   try {
     const response = await fetch(`${API_URL}/auth/register`,{
@@ -40,13 +38,9 @@ const logout = () => {
 }
 
 
-async function getCurrentUser() {
-  return JSON.parse(localStorage.getItem("user"));
-};
 const AuthService = {
   register,
   login,
   logout,
-  getCurrentUser,
 }
 export default AuthService
