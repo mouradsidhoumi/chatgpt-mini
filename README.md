@@ -4,14 +4,14 @@
 
 ```bash
 cd client
-cp sample.env .env # fill it w/ yours
+cp sample.env .env
 yarn install
 yarn dev
 ```
 
 ```bash
 cd server
-cp sample.env .env # fill it w/ yours
+cp sample.env .env  # to fill
 npm install
 npm run dev
 ```
