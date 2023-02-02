@@ -1,0 +1,55 @@
+body{
+  margin: 0;
+}
+h1, h2{
+  margin-block: 1rem 1.5rem;
+}
+hr{
+  margin-block: 2rem 1rem;
+}
+
+form input[type], form select, form textarea {
+  margin-bottom: 0rem;
+}
+
+input[type=button], input[type=reset], input[type=submit] {
+  padding-block: .2rem 1rem;
+  border-radius: 7px;
+
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: .7rem;
+  text-align: center;
+
+
+  line-height: 26px;
+  font-weight: 400;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:visited{
+  color: #1570ab;
+}
+a:hover{
+  color: #99c0c9;
+}
+::-moz-selection { /* Code for Firefox */
+  color: #dddddd;
+  background: #ff5aec;
+}
+
+::selection {
+  color: #dddddd;
+  background: #ff5aec;
+}
